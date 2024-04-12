@@ -1,16 +1,16 @@
 public class Ex5_02 {
     
     public static void main(String[] args) {
-        ColorPoint cp = new ColorPoint(5, 6, "bule");
+        ColorPoint_2  cp = new ColorPoint_2 (5, 6, "bule");
         cp.showColorPoint();
     }
 }
-class Point{
+class Point_2{
     private int x,y;
-    public Point(){
+    public Point_2(){
         this.x = this.y =0;
     }
-    public Point(int x, int y){
+    public Point_2(int x, int y){
         this.x=x;
         this.y=y;
     }
@@ -19,10 +19,10 @@ class Point{
     }
 }
 
-class ColorPoint extends Point{
+class ColorPoint_2 extends Point_2{
     private String color;
 
-    public ColorPoint(int x, int y, String color){
+    public ColorPoint_2 (int x, int y, String color){
         super(x, y);
         this.color = color;
     }
