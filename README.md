@@ -9,8 +9,7 @@ static 멤버 사용
 공유 멤버를 만들 때 사용  
 static 메소드의 제약 조건
 - static 메소드는 오직 static 멤버만 접근 가능
-- static 메소드는 this 사용불가
-(<h5>static메소드는 객체상관없이 사용가능) 
+- static 메소드는 this 사용불가  (<h6>static메소드는 객체상관없이 사용가능) 
 
 final 클래스와 메소드
 - final 클래스 더이상 클래스 상속(오버라이딩) 불가능  
