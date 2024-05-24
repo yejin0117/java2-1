@@ -21,6 +21,34 @@ public class MouseEventAllEx extends JFrame{
         setSize(300,200);
         setVisible(true);
     }
-    class MyMouseListener implements MouseListener
-        public void
+
+    class MyMouseListener implements MouseListener{
+        public void mousePressed(MouseEvent e){
+            la.setLocation(e.getX(), e.getY());
+            setTitle("mousePressed()"+e.getX()+","+e.getY()+")");
+        }
+        public void mouseReleased(MouseEvent e){
+            la.setLocation(e.getX(), e.getY());
+            setTitle("mouseReleased()"+e.getX()+","+e.getY()+")");
+        }
+        public void mouseClicked(MouseEvent e){
+            la.setLocation(e.getX(), e.getY());
+            setTitle("mouseClicked()"+e.getX()+","+e.getY()+")");
+        }
+        public void mouseExited(MouseEvent e){
+            la.setLocation(e.getX(), e.getY());
+            setTitle("mouseExited()"+e.getX()+","+e.getY()+")");
+        }
+        public void mouseDragged(MouseEvent e){
+            la.setLocation(e.getX(), e.getY());
+            setTitle("mouseDragged()"+e.getX()+","+e.getY()+")");
+        }
+        public void mouseMoved(MouseEvent e){
+            la.setLocation(e.getX(), e.getY());
+            setTitle("mouseMoved()"+e.getX()+","+e.getY()+")");
+        }
+    }
+    public static void main(String[] args){
+        new MouseEventAllEx();
+    }
 }
